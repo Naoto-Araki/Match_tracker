@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Match Tracker</title>
+    </head>
+    <body>
+        <h1>対戦履歴一覧</h1>
+        <ul>
+            {% for match in matches %}
+            <li>
+                {{match.date}} - {{match.player1}} vs {{match.player2}} - 勝者：{{match.winner}}
+            </li>
+            {% empty %}
+            <li>対戦履歴がありません</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
