@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>試合登録</title>
+</head>
+<body>
+    <h1>新規対戦登録</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">登録</button>
+    </form>
+    <a href="{% url 'home' %}">戻る</a>
+</body>
+</html>
