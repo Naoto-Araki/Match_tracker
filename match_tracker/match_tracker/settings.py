@@ -17,6 +17,9 @@ ALLOWED_HOSTS = []
 
 AUTH_USER_MODEL = 'core.CustomUser'
 
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
 # Application definition
 
 INSTALLED_APPS = [
