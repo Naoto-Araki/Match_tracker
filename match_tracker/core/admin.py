@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import CustomUser, GameType, Match
+from .models import CustomUser, GameType, Match, Friendship
 
 class CustomUserAdmin(UserAdmin):
     model = CustomUser
@@ -22,3 +22,4 @@ class CustomUserAdmin(UserAdmin):
 admin.site.register(CustomUser, CustomUserAdmin)
 admin.site.register(GameType)
 admin.site.register(Match)
+admin.site.register(Friendship)

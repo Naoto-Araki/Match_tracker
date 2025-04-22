@@ -17,6 +17,7 @@
                 <li>
                     {{match.date}} - {{match.player1}} vs {{match.player2}} - 勝者：{{match.winner}}
                 </li>
+                <a href="{% url 'create_match' %}">試合を登録</a>
                 {% empty %}
                 <li>対戦履歴がありません</li>
                 {% endfor %}
